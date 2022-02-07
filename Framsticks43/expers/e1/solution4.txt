@@ -1,0 +1,490 @@
+Framsticks command-line interface and server (free), version 4.3
+Supported features: Multi-threading[+], ODE[+], Python[-]
+Homepage:  http://www.framsticks.com/
+
+VMNeuronManager.autoload: Neuro classes added: Delay Light Nn PIDP PIDV SeeLight SeeLight2 S0 S1 Thr 
+UserScripts.autoload: 18 user scripts added.
+Simulator.load: Loading from 'default.sim'
+Loader.load: Comments read from file follow:
+Loader.load:  created Thu May 25 15:57:54 2006
+Loader.load:  by Framsticks 2.11
+Simulator.load: Settings loaded from 'default.sim'
+---------------------------------------------------
+Basic commands:
+ - help      : show this help message
+ - qu or EOF : leave command shell
+ - lo FILENAME  : load experiment, genotypes, settings (expt/gen/sim)
+ - sa FILENAME  : save experiment (expt)
+ - st        : do single simulation step
+ - st NNN    : do NNN simulation steps
+ - go        : simulate until interrupted (ctrl+c)
+ - lm        : list all commandline macros
+> Simulator.load: Loading from 'Zadanie3.sim'
+Loader.load: Comments read from file follow:
+Loader.load:  created Mon Feb  7 03:57:38 2022
+Loader.load:  by Framsticks 4.3
+Simulator.load: Settings loaded from 'Zadanie3.sim'
+> > Script.Message: [LOGTITLE] MECHA rnd=(0.0,0.0,0.01) popsize=20 gen.ops.=(20.0,64.0,16.0)
+> > FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1 2 0.226666666666667 0.226666666666667 0.226666666666667
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 10 8 0.15 0.2115 0.305
+Script.Message: [LOG] 20 13 0.15 0.215416666654273 0.305
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 30 16 0.226666666607648 0.260238361186461 0.305005585352397
+Script.Message: [LOG] 40 18 0.226666666666667 0.286349472264412 0.305005585352397
+Script.Message: [LOG] 50 16 0.304999999811153 0.305000265879234 0.305005585352397
+Script.Message: [LOG] 60 16 -0.016 0.289714551665462 0.305005585352397
+Script.Message: [LOG] 70 15 0.304999999811153 0.30500053058505 0.30500557123745
+Script.Message: [LOG] 80 16 0.305 0.305000794582729 0.305005562079105
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 90 16 0.226614749006393 0.301268431725216 0.305005627492861
+Script.Message: [LOG] 100 16 0.305 0.305001062724911 0.305005627492861
+Script.Message: [LOG] 110 18 0.305 0.305001589653339 0.305005627492861
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 120 16 0.305 0.30500240620781 0.305005657730257
+Script.Message: [LOG] 130 16 0.226666667034239 0.301272742457067 0.305005657730257
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 140 14 0.305000003492957 0.305004487876 0.305006874351064
+Script.Message: [LOG] 150 13 0.304995812196404 0.305005172346554 0.305006075540726
+Script.Message: [LOG] 160 10 0.30500551736216 0.305005812052084 0.305008672132999
+Script.Message: [LOG] 170 10 0.304999999808692 0.305005539554539 0.305008672132999
+Script.Message: [LOG] 180 7 0.305005566553292 0.305005879208926 0.305008012100769
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 190 6 0.305005807563012 0.305006398189997 0.305011034569967
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 200 8 0.304999999808692 0.305007679413191 0.305035657249338
+Script.Message: [LOG] 210 7 0.226678103833453 0.301277652522405 0.305035657249338
+Script.Message: [LOG] 220 7 -0.0159954710586535 0.289721769643437 0.305035657249338
+Script.Message: [LOG] 230 8 0.305004693462422 0.305008873878898 0.305034057115186
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 240 9 0.304999999808692 0.30501005873545 0.305037763443466
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 250 8 0.305005835649916 0.305015182107021 0.305036959340432
+Script.Message: [LOG] 260 12 -0.0159999958185443 0.289731001183905 0.305037133715631
+Script.Message: [LOG] 270 13 0.305004727473092 0.305018261809476 0.305037133715631
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 280 15 0.304998838227038 0.30502383351864 0.3051974926749
+Script.Message: [LOG] 290 16 0.304954114791582 0.3050264022113 0.3051974926749
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Esatar Ysy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Esatar Ysy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Ipygup Syhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ipygup Syhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 300 15 0.305003584562073 0.305029956471346 0.3051974926749
+Script.Message: [LOG] 310 14 0.226674741777387 0.30130046092237 0.3051974926749
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 320 13 0.305009827189405 0.305058836196295 0.305337936006265
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Ysuluc Dysy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ysuluc Dysy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Yratur Tysy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Yratur Tysy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 330 13 0.305003150138724 0.305061668590143 0.305337936006265
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 340 15 0.305017301997794 0.305110668363389 0.305337936006265
+Script.Message: [LOG] 350 16 0.304980361790832 0.305126169966213 0.305337936006265
+Script.Message: [LOG] 360 15 0.305023809575794 0.305166281846897 0.305337936006265
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Umidap Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Umidap Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 370 15 0.305041448677014 0.30518382321998 0.305337936006265
+Script.Message: [LOG] 380 16 0.305067999171109 0.305222301552659 0.305337936006265
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 390 14 0.30499999998179 0.305293662350909 0.305338483385654
+Script.Message: [LOG] 400 13 0.305051285717924 0.305312726916087 0.305338483385654
+Script.Message: [LOG] 410 11 0.305333961576259 0.305336625118959 0.305338303516001
+Script.Message: [LOG] 420 11 -0.016763673374945 0.289999058917178 0.305338303516001
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ytyuc Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ytyuc Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 430 10 0.226646895621115 0.301590223209947 0.305338303516001
+Script.Message: [LOG] 440 10 0.30533658317376 0.305337509342522 0.305338303516001
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Esyar Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Esyar Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 450 8 0.305289464374923 0.305335340830638 0.305338323299768
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 460 11 0.305337399222127 0.305337850157364 0.30534032685156
+Script.Message: [LOG] 470 12 0.305068881879592 0.305325140871428 0.30533847163703
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Acekin Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Acekin Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 480 10 0.305071692384284 0.305325313862478 0.305338639036803
+Script.Message: [LOG] 490 8 0.305337005654738 0.305337926333857 0.305338639036803
+Script.Message: [LOG] 500 8 0.304931625990079 0.305318528847085 0.305338639036803
+Script.Message: [LOG] 510 7 0.305337688139051 0.305337958140864 0.305338639036803
+Script.Message: [LOG] 520 9 0.305336859722455 0.305337973078786 0.305338639036803
+Script.Message: [LOG] 530 9 0.304847412969057 0.305314652882128 0.305338639036803
+Script.Message: [LOG] 540 9 0.305337285317086 0.305337928145423 0.305338085233078
+Script.Message: [LOG] 550 10 0.305068269926813 0.30532517610703 0.305338585864909
+Script.Message: [LOG] 560 9 0.305337874546978 0.305338012431037 0.305338585864909
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ahinug Syhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ahinug Syhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 570 9 0.305337861480694 0.305338002489585 0.305338585864909
+Script.Message: [LOG] 580 8 0.305337862344768 0.305337991187626 0.305338639036803
+Script.Message: [LOG] 590 9 0.30499819569709 0.305321945045461 0.305339611795953
+Script.Message: [LOG] 600 11 0.305336370675921 0.3053378579411 0.305339611795953
+Script.Message: [LOG] 610 10 0.305337555207444 0.305338046960573 0.305339611795953
+Script.Message: [LOG] 620 12 0.305182453471687 0.305330729872169 0.305339611795953
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ywuwik Syhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ywuwik Syhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 630 12 0.305060560608954 0.305325049544847 0.305338899430265
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Iiniz Syhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Iiniz Syhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 640 11 0.305338130276488 0.305338415363519 0.305339265906327
+Script.Message: [LOG] 650 12 0.305059250100142 0.305325103569077 0.305339265906327
+Script.Message: [LOG] 660 13 0.305336287309304 0.305338288275387 0.305339265906327
+Script.Message: [LOG] 670 12 0.305338152410826 0.30533831730305 0.305339265906327
+Script.Message: [LOG] 680 11 0.305337759286118 0.305338225130676 0.305338598064819
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 690 13 0.30533771626582 0.30533846371701 0.305341978648449
+Script.Message: [LOG] 700 14 -0.0171405177033274 0.289982443348836 0.305341978648449
+Script.Message: [LOG] 710 14 0.304931721978108 0.305319211117862 0.305341978648449
+Script.Message: [LOG] 720 14 0.305338037632885 0.305338556025155 0.305341978648449
+Script.Message: [LOG] 730 13 0.305337369762401 0.30533853465161 0.305341978648449
+Script.Message: [LOG] 740 13 0.3053373715285 0.3053385207339 0.305341978648449
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Icina Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Icina Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 750 12 0.305337868785243 0.305338668510995 0.305341978648449
+Script.Message: [LOG] 760 13 -0.0158338074173667 0.290044800051417 0.305341978648449
+Script.Message: [LOG] 770 14 0.304996534388632 0.305322422380665 0.305341978648449
+Script.Message: [LOG] 780 13 0.305337793220239 0.305338656315857 0.305341115832809
+Script.Message: [LOG] 790 13 0.30479415482422 0.305312789046526 0.305341115832809
+Script.Message: [LOG] 800 13 -0.016 0.29003688758462 0.305341115832809
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 810 12 0.305336451976762 0.305342025501992 0.30541062114308
+Script.Message: [LOG] 820 15 0.305067802358585 0.305327112474388 0.30541062114308
+Script.Message: [LOG] 830 14 0.305337997901185 0.305342102832059 0.30541062114308
+Script.Message: [LOG] 840 14 0.30533698209507 0.305342038838522 0.30541062114308
+Script.Message: [LOG] 850 15 0.226666666666667 0.301596043724565 0.30541062114308
+Script.Message: [LOG] 860 15 0.305069204128821 0.305329617158119 0.30541062114308
+Script.Message: [LOG] 870 14 0.305337671854574 0.305342326499965 0.30541062114308
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 880 14 0.22659692542145 0.301596598635151 0.305417814278832
+Script.Message: [LOG] 890 12 0.305332222498813 0.30534207480099 0.30541062114308
+Script.Message: [LOG] 900 10 0.305028862469381 0.305327593194987 0.30541062114308
+Script.Message: [LOG] 910 11 0.305338452215498 0.305342533123747 0.30541062114308
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Irikap Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Irikap Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 920 10 0.305337853372978 0.305342368112564 0.30541062114308
+Script.Message: [LOG] 930 10 0.305338171756217 0.30534242434824 0.30541062114308
+Script.Message: [LOG] 940 9 0.30533829151628 0.305338938224249 0.305339386143507
+Script.Message: [LOG] 950 9 0.305338117452002 0.305338787276879 0.305339386143507
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ihikap Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ihikap Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 960 8 0.305335527742426 0.305338477143551 0.305339261749705
+Script.Message: [LOG] 970 8 0.305336185901503 0.305338622841207 0.305339261749705
+Script.Message: [LOG] 980 7 0.30505773267316 0.305325312003507 0.305339261749705
+Script.Message: [LOG] 990 5 0.226666666666667 0.301592439930614 0.305339261749705
+Script.Message: [LOG] 1000 4 0.305338217583641 0.305338546716284 0.305339261749705
+Script.Message: [LOG] 1010 4 0.305337297727166 0.305338507000717 0.305338737704915
+Script.Message: [LOG] 1020 3 0.305338289541842 0.30533842724628 0.305338496833331
+Script.Message: [LOG] 1030 5 0.305337826660118 0.305338318479191 0.305338480955214
+Script.Message: [LOG] 1040 5 -0.0159017606841773 0.290041190793407 0.305338480955214
+Script.Message: [LOG] 1050 5 -0.0161720323923807 0.290028355157012 0.30534003018753
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Urikam Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Urikam Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1060 6 0.305338072958895 0.305338357579992 0.30534003018753
+Script.Message: [LOG] 1070 6 0.305338198570707 0.305338324887375 0.30534003018753
+Script.Message: [LOG] 1080 8 -0.0171427278936973 0.289981790971539 0.30534003018753
+Script.Message: [LOG] 1090 12 0.305337702722775 0.305338180764829 0.30534003018753
+Script.Message: [LOG] 1100 13 0.30533776580426 0.30533824912594 0.305338993764378
+Script.Message: [LOG] 1110 13 0.305338209229458 0.305338437352087 0.305339388007548
+Script.Message: [LOG] 1120 14 0.305338236295751 0.305338430716633 0.305339388007548
+Script.Message: [LOG] 1130 14 0.304931791478068 0.305319055907711 0.305339388007548
+Script.Message: [LOG] 1140 14 0.305337793259236 0.305338472365236 0.305339388007548
+Script.Message: [LOG] 1150 14 0.30533829394658 0.305339754944459 0.305364808090496
+Script.Message: [LOG] 1160 14 0.305075235579368 0.305327260848444 0.305364808090496
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Ecygut Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ecygut Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1170 14 0.305338308348932 0.305339798176344 0.305364808090496
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1180 15 0.226666666666667 0.301600412257872 0.305423885640718
+Script.Message: [LOG] 1190 15 -0.016 0.290044849276882 0.305423885640718
+Script.Message: [LOG] 1200 15 0.305335351727014 0.305338467833657 0.305339388007548
+Script.Message: [LOG] 1210 13 0.305168577957703 0.30533055306898 0.305339388007548
+Script.Message: [LOG] 1220 15 -0.0161660907373758 0.290028805973271 0.305339388007548
+Script.Message: [LOG] 1230 14 0.305337392683317 0.305338569401909 0.305339388007548
+Script.Message: [LOG] 1240 14 -0.016166326211178 0.290028853815829 0.305339388007548
+Script.Message: [LOG] 1250 12 0.30533813873419 0.305338586041965 0.305339521526351
+Script.Message: [LOG] 1260 12 0.305337726942666 0.305338566432845 0.305339521526351
+Script.Message: [LOG] 1270 13 0.304717282126032 0.305309014028088 0.305339521526351
+Script.Message: [LOG] 1280 11 0.305338354437216 0.30533857963636 0.305339521526351
+Script.Message: [LOG] 1290 11 0.305338283781708 0.305338532283986 0.305339521526351
+Script.Message: [LOG] 1300 10 0.305337533067181 0.305338487891804 0.305339388007548
+Script.Message: [LOG] 1310 9 0.305337873027501 0.305338498585813 0.305339388007548
+Script.Message: [LOG] 1320 9 0.3053380170214 0.305338505442665 0.305339388007548
+Script.Message: [LOG] 1330 9 0.15 0.297941488730461 0.305339388007548
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Odygi Ahahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Odygi Ahahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1340 10 0.305338291253313 0.30533858580592 0.305339521526351
+Script.Message: [LOG] 1350 9 0.305338327684322 0.305338565292526 0.305339521526351
+Script.Message: [LOG] 1360 11 0.305337640011162 0.305338700179782 0.305341072236174
+Script.Message: [LOG] 1370 11 0.305337917573354 0.305338706883159 0.305341072236174
+Script.Message: [LOG] 1380 10 0.30533754737712 0.305338577796576 0.305341072236174
+Script.Message: [LOG] 1390 11 0.305337709460014 0.305338638605782 0.305341072236174
+Script.Message: [LOG] 1400 10 0.305338256270762 0.305338747580331 0.305339583912549
+Script.Message: [LOG] 1410 9 0.305 0.305322669344127 0.305339521526351
+Script.Message: [LOG] 1420 8 0.305338212538915 0.305338756566213 0.305339521526351
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Agowuw Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Agowuw Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1430 8 0.305170945161473 0.305330857291666 0.305339521526351
+Script.Message: [LOG] 1440 8 -0.0159993438601144 0.290036952827512 0.305339158387275
+Script.Message: [LOG] 1450 8 0.305337246868304 0.305338696931098 0.305339260155023
+Script.Message: [LOG] 1460 7 0.305338577033308 0.305338739400902 0.305339260155023
+Script.Message: [LOG] 1470 9 0.305338444893311 0.305338612873684 0.305339260155023
+Script.Message: [LOG] 1480 9 0.305338462680834 0.305338631212727 0.305339260155023
+Script.Message: [LOG] 1490 9 -0.0166666709780901 0.290005013098303 0.305339260155023
+Script.Message: [LOG] 1500 8 0.305292432689513 0.305331979395339 0.305338993517139
+Script.Message: [LOG] 1510 8 0.305338291253313 0.305338531384616 0.305338887720354
+Script.Message: [LOG] 1520 7 0.305336376848548 0.305338427877711 0.305338887720354
+Script.Message: [LOG] 1530 7 0.305338280416497 0.305338566141152 0.305339521526351
+Script.Message: [LOG] 1540 7 0.304723689857963 0.305309302615284 0.305339521526351
+Script.Message: [LOG] 1550 9 0.305337141461104 0.305338508488273 0.305339521526351
+Script.Message: [LOG] 1560 9 0.305337860472032 0.305338530635888 0.305339521526351
+Script.Message: [LOG] 1570 9 0.304779123452508 0.305311920713746 0.305339521526351
+Script.Message: [LOG] 1580 9 0.305338212538915 0.305338492828848 0.305339521526351
+Script.Message: [LOG] 1590 11 0.305337796738432 0.305338480357561 0.305339521526351
+Script.Message: [LOG] 1600 12 0.305338290513129 0.305338595956768 0.305339521526351
+Script.Message: [LOG] 1610 15 0.305336317494577 0.30533835808798 0.305339521526351
+Script.Message: [LOG] 1620 16 -0.0166220405808093 0.289998011544617 0.305339521526351
+Script.Message: [LOG] 1630 16 0.305338189777321 0.305338653094234 0.305339521526351
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Apepit Ahehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Apepit Ahehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1640 15 -0.0171236243482315 0.289983334534472 0.305339521526351
+Script.Message: [LOG] 1650 12 0.30533754737712 0.305338737707779 0.305339521526351
+Script.Message: [LOG] 1660 11 0.30533829394658 0.305338757445069 0.305339521526351
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Anawit Sohy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Anawit Sohy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1670 10 -0.0171402749947011 0.289982701201447 0.305339521526351
+Script.Message: [LOG] 1680 12 0.305338134366089 0.305338862644246 0.305339521526351
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Udepil Sahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Udepil Sahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1690 13 0.305338365512931 0.305338882535135 0.305339521526351
+Script.Message: [LOG] 1700 10 0.305338460360317 0.305338794272299 0.305339521526351
+Script.Message: [LOG] 1710 9 0.305102082924944 0.30531634800731 0.305339521526351
+Script.Message: [LOG] 1720 10 0.305050777511616 0.30532519139972 0.305339521526351
+Script.Message: [LOG] 1730 11 -0.0171428316170427 0.289982733323067 0.305339521526351
+Script.Message: [LOG] 1740 11 0.3053380170214 0.305338964210611 0.305339521526351
+Script.Message: [LOG] 1750 14 0.305337663233139 0.305338761409897 0.305339521526351
+Script.Message: [LOG] 1760 12 -0.0159448272969829 0.290039628972401 0.305339521526351
+Script.Message: [LOG] 1770 11 0.305338336903386 0.305338777698119 0.305339521526351
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1780 12 0.30533829394658 0.305417811451125 0.30697262269485
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1790 11 0.305338344084852 0.305500551914152 0.307078405536452
+Script.Message: [LOG] 1800 11 0.305338344084852 0.305500579972599 0.307078405536452
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1810 13 -0.0161665730182935 0.290521314058743 0.307215244933142
+Script.Message: [LOG] 1820 13 0.305338550533594 0.306243023722673 0.307215244933142
+Script.Message: [LOG] 1830 15 0.305338984383302 0.306814381768741 0.307215244933142
+Script.Message: [LOG] 1840 12 0.30697262269485 0.30707148314231 0.307138013400379
+Script.Message: [LOG] 1850 10 -0.0152987337970394 0.29174745148505 0.307165311814849
+Script.Message: [LOG] 1860 9 0.305657297702846 0.307039115633073 0.307165311814849
+Script.Message: [LOG] 1870 10 0.30706404313901 0.307102681799269 0.307138013400379
+Script.Message: [LOG] 1880 11 0.307068976958869 0.307104263992782 0.307138013400379
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ehepac Sahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ehepac Sahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1890 10 0.307033380632577 0.307106458562773 0.307131161258939
+Script.Message: [LOG] 1900 10 0.307081465495955 0.307111857224657 0.307131161258939
+Script.Message: [LOG] 1910 10 0.307095620176045 0.307116974560811 0.307192606716837
+Script.Message: [LOG] 1920 12 0.307060960205409 0.307110903667974 0.30718036041473
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1930 10 0.307045855039613 0.307142296609233 0.307797918995402
+Script.Message: [LOG] 1940 13 0.306903224113478 0.307140297227687 0.307797918995402
+Script.Message: [LOG] 1950 12 0.307038110562676 0.30713810969181 0.307797918995402
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1960 13 0.306989532361861 0.307201512376277 0.307813390975423
+Script.Message: [LOG] 1970 15 0.307090861819497 0.307266246450586 0.307813390975423
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1980 15 0.307110821345342 0.307429765443414 0.307822767514616
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1990 17 0.307119813877133 0.307584105414812 0.307824914016084
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2000 15 0.307705489205422 0.307772469984586 0.307848766428892
+Script.Message: [LOG] 2010 16 0.307733183105251 0.307786980408557 0.307822767514616
+Script.Message: [LOG] 2020 17 0.307755224623353 0.307794948382938 0.307827982437879
+Script.Message: [LOG] 2030 16 0.307691258215863 0.307793924448756 0.307835933016447
+Script.Message: [LOG] 2040 13 0.307781523388892 0.307802082521882 0.307835933016447
+Script.Message: [LOG] 2050 13 0.307630599069593 0.307789139722814 0.307835933016447
+Script.Message: [LOG] 2060 9 0.307782685331862 0.307791468039687 0.307835933016447
+Script.Message: [LOG] 2070 11 -0.0147984196104695 0.292428522440626 0.307835933016447
+Script.Message: [LOG] 2080 12 0.30763709806659 0.307779820479882 0.307835933016447
+Script.Message: [LOG] 2090 9 0.307769922065602 0.307786505178483 0.307835933016447
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2100 12 0.307777302665798 0.307797666438328 0.307881461476375
+Script.Message: [LOG] 2110 13 0.226666666666667 0.30393737462309 0.307881461476375
+Script.Message: [LOG] 2120 12 0.30777917815239 0.307798411177682 0.307881461476375
+Script.Message: [LOG] 2130 13 0.30777917815239 0.307801410418481 0.307881461476375
+Script.Message: [LOG] 2140 12 0.307784614508958 0.307801080484427 0.307842733261
+Script.Message: [LOG] 2150 12 0.307753785789497 0.307798563768969 0.307842733261
+Script.Message: [LOG] 2160 13 0.307780331044907 0.307802565889204 0.307842733261
+Script.Message: [LOG] 2170 14 0.30773513070952 0.307797562159467 0.307842113778479
+Script.Message: [LOG] 2180 15 0.307701238522069 0.307797823292537 0.307842113778479
+Script.Message: [LOG] 2190 15 0.307785989562221 0.307804292200392 0.307842113778479
+Script.Message: [LOG] 2200 13 0.307777119411949 0.307798614783859 0.307833274346299
+Script.Message: [LOG] 2210 15 0.307733122600302 0.307798145627193 0.307833274346299
+Script.Message: [LOG] 2220 15 0.307747423359737 0.307801434666109 0.307833274346299
+Script.Message: [LOG] 2230 14 0.30779094377057 0.307803356342265 0.307833274346299
+Script.Message: [LOG] 2240 13 0.307738521230638 0.307797611645526 0.307816978689268
+Script.Message: [LOG] 2250 12 0.30777620025518 0.307797578700631 0.307816978689268
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2260 14 0.0247492123001887 0.294326415479815 0.307889046905964
+Script.Message: [LOG] 2270 15 0.304801949051514 0.307662318760986 0.307889046905964
+Script.Message: [LOG] 2280 14 0.30776306330624 0.307800812265526 0.307889046905964
+Script.Message: [LOG] 2290 14 0.307784334429401 0.307812238145012 0.307889046905964
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2300 16 0.307666689148725 0.307809241756752 0.307890090322726
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2310 16 0.307786030056903 0.307827255965704 0.307933128415157
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ocepan Ahahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ocepan Ahahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2320 15 0.307771740784085 0.307826919200739 0.307933128415157
+Script.Message: [LOG] 2330 14 0.307790646749827 0.307827716439712 0.307933128415157
+Script.Message: [LOG] 2340 17 0.226666666666667 0.303966317685469 0.307933128415157
+Script.Message: [LOG] 2350 16 0.304801455419458 0.307685006832032 0.307933128415157
+Script.Message: [LOG] 2360 16 0.307772544463399 0.307820156209625 0.307933128415157
+Script.Message: [LOG] 2370 16 0.304660996742897 0.30767398885711 0.307933128415157
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Uwepak Hahe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uwepak Hahe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2380 15 0.307695283924426 0.307816354655098 0.307933128415157
+Script.Message: [LOG] 2390 14 0.307630177390306 0.3078127328115 0.307933128415157
+Script.Message: [LOG] 2400 13 0.307749025614766 0.307812409718882 0.307933128415157
+Script.Message: [LOG] 2410 15 0.307767143864471 0.307816227319371 0.307889046905964
+Script.Message: [LOG] 2420 13 0.307776260579336 0.307812530711709 0.307880673899199
+Script.Message: [LOG] 2430 13 -0.0155970162977784 0.292412585869353 0.307880673899199
+Script.Message: [LOG] 2440 13 0.3077610058908 0.30781101496522 0.30783910048177
+Script.Message: [LOG] 2450 12 0.307721716093338 0.307807373392344 0.307830004144158
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2460 12 0.307789794796158 0.307922409803692 0.310172659440119
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Apepum Hahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Apepum Hahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2470 11 0.30778760640169 0.307917590337404 0.310172659440119
+Script.Message: [LOG] 2480 10 0.307700868459755 0.307907081716116 0.310172659440119
+Script.Message: [LOG] 2490 12 0.307764533963238 0.307912898224374 0.310172659440119
+Script.Message: [LOG] 2500 14 0.304799829775449 0.30765989366757 0.307843716496991
+Script.Message: [LOG] 2510 15 0.307748435278422 0.307801489651366 0.307843716496991
+Script.Message: [LOG] 2520 16 0.307722818622696 0.307800273817433 0.307843716496991
+Script.Message: [LOG] 2530 16 0.307764111275523 0.307810354005354 0.307875956499789
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Agepu Sahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Agepu Sahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2540 14 0.307782251030107 0.307810972665714 0.307843716496991
+Script.Message: [LOG] 2550 12 0.30774175706673 0.307808907673198 0.307835028495714
+Script.Message: [LOG] 2560 13 0.30499976512031 0.307685166585778 0.307950145061198
+Script.Message: [LOG] 2570 13 0.307694966945915 0.307813202557264 0.307950145061198
+Script.Message: [LOG] 2580 12 0.226838755163802 0.303957747605742 0.307835028495714
+Script.Message: [LOG] 2590 11 0.307794615366149 0.307811627795779 0.307835028495714
+Script.Message: [LOG] 2600 12 0.307731946507167 0.307806864946627 0.307875165882707
+Script.Message: [LOG] 2610 12 0.307784388776796 0.30780778258018 0.307875165882707
+Script.Message: [LOG] 2620 14 0.307753715513388 0.307807603178032 0.307892083302108
+Script.Message: [LOG] 2630 12 0.307786219030715 0.307811920837854 0.307892083302108
+Script.Message: [LOG] 2640 11 0.307776672761308 0.307811537879074 0.307892083302108
+Script.Message: [LOG] 2650 11 0.304940026845556 0.307672125388044 0.307892083302108
+Script.Message: [LOG] 2660 12 0.305049423267942 0.307678677289401 0.307868421165476
+Script.Message: [LOG] 2670 12 0.307696056344786 0.307805555889443 0.307868421165476
+Script.Message: [LOG] 2680 16 0.30775109272374 0.307823443631016 0.307918254382677
+Script.Message: [LOG] 2690 17 0.226666375070037 0.303961008905067 0.307918254382677
+Script.Message: [LOG] 2700 15 0.307798428086794 0.307826337388944 0.30787996369021
+Script.Message: [LOG] 2710 15 0.307784073370607 0.30782430804504 0.30787996369021
+Script.Message: [LOG] 2720 16 0.307775120095051 0.307840413647798 0.307904654316783
+Script.Message: [LOG] 2730 16 0.305067066057337 0.307709620497369 0.30787996369021
+Script.Message: [LOG] 2740 14 -0.0159969526928094 0.292414692425761 0.307863706830708
+Script.Message: [LOG] 2750 12 -0.00863991184335396 0.292758550430722 0.307859644643672
+Script.Message: [LOG] 2760 15 -0.0166213541184707 0.292374283333482 0.307879041033009
+Script.Message: [LOG] 2770 16 0.307511108946033 0.307810199725452 0.307879041033009
+Script.Message: [LOG] 2780 13 0.307814675643193 0.307831446653925 0.307910110653797
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Arepir Hahe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Arepir Hahe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2790 15 0.307735639512629 0.307828341305128 0.307911893505117
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Itawum Ysy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Itawum Ysy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2800 15 0.307814675643193 0.307832861492447 0.307910110653797
+Script.Message: [LOG] 2810 14 0.226764221289739 0.30396513379623 0.307910110653797
+Script.Message: [LOG] 2820 16 0.307752563027831 0.3078398470589 0.308002847974867
+Script.Message: [LOG] 2830 14 0.307788157864023 0.307836405779396 0.308002847974867
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2840 16 0.307757812428468 0.307965197213936 0.310639495870301
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2850 16 0.304796940139234 0.308089476156847 0.311982431273419
+Script.Message: [LOG] 2860 15 0.307498543693463 0.308221663128525 0.311982431273419
+Script.Message: [LOG] 2870 15 0.307688202642648 0.308363938717265 0.311982431273419
+Script.Message: [LOG] 2880 15 0.304879383142195 0.308236606415045 0.311982431273419
+Script.Message: [LOG] 2890 12 0.307821016497623 0.308511060442301 0.311982431273419
+Script.Message: [LOG] 2900 11 0.307796945594641 0.308500817776365 0.311982431273419
+Script.Message: [LOG] 2910 11 -0.0159231624880831 0.292948981895795 0.310639491389417
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2920 12 0.307826287456395 0.310157352757053 0.322044995909118
+Script.Message: [LOG] 2930 15 0.305190402391334 0.310895488580558 0.319199007598569
+Script.Message: [LOG] 2940 14 0.30788556793664 0.310960341346801 0.319199007598569
+Script.Message: [LOG] 2950 14 0.308763463824209 0.311115212073369 0.319199007598569
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2960 16 0.226666666712435 0.31464973457387 0.382548767354174
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Ydeput Hahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ydeput Hahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2970 16 0.305049088093851 0.318324932615939 0.382548767354174
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ihygug Akahy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ihygug Akahy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2980 14 0.309341843792933 0.324347777193878 0.380692826387758
+Script.Message: [LOG] 2990 17 0.226660349354946 0.331064403017144 0.38160457540281
+FileObject.write: Writing to file 'scripts_output\22561901.gen' (Improvement snapshot)
+Script.Message: [LOG] 3000 16 0.310841573779272 0.345122621531168 0.399515994669518
+> Script.Message: Experiment saved (15 genotypes)
+> Shell closed.

@@ -1,0 +1,707 @@
+Framsticks command-line interface and server (free), version 4.3
+Supported features: Multi-threading[+], ODE[+], Python[-]
+Homepage:  http://www.framsticks.com/
+
+VMNeuronManager.autoload: Neuro classes added: Delay Light Nn PIDP PIDV SeeLight SeeLight2 S0 S1 Thr 
+UserScripts.autoload: 18 user scripts added.
+Simulator.load: Loading from 'default.sim'
+Loader.load: Comments read from file follow:
+Loader.load:  created Thu May 25 15:57:54 2006
+Loader.load:  by Framsticks 2.11
+Simulator.load: Settings loaded from 'default.sim'
+---------------------------------------------------
+Basic commands:
+ - help      : show this help message
+ - qu or EOF : leave command shell
+ - lo FILENAME  : load experiment, genotypes, settings (expt/gen/sim)
+ - sa FILENAME  : save experiment (expt)
+ - st        : do single simulation step
+ - st NNN    : do NNN simulation steps
+ - go        : simulate until interrupted (ctrl+c)
+ - lm        : list all commandline macros
+> Simulator.load: Loading from 'Zadanie3.sim'
+Loader.load: Comments read from file follow:
+Loader.load:  created Mon Feb  7 03:57:38 2022
+Loader.load:  by Framsticks 4.3
+Simulator.load: Settings loaded from 'Zadanie3.sim'
+> > Script.Message: [LOGTITLE] MECHA rnd=(0.0,0.0,0.01) popsize=20 gen.ops.=(20.0,64.0,16.0)
+> > FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1 2 0.15 0.15 0.15
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 10 6 0.15 0.188333333333333 0.226666666666667
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 20 12 0.15 0.2155 0.305
+Script.Message: [LOG] 30 15 0.15 0.249126984126984 0.305
+Script.Message: [LOG] 40 18 0.226666666666667 0.271428571419579 0.305
+Script.Message: [LOG] 50 19 0.226666666666667 0.301269841251856 0.305
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 60 19 0.226666666666667 0.301270542686705 0.305014616227006
+Script.Message: [LOG] 70 20 0.226666664717102 0.301270606025798 0.305014616227006
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ynagac Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ynagac Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 80 20 0.305 0.305000780617307 0.305014616227006
+Script.Message: [LOG] 90 17 0.304999999994964 0.30500078061615 0.305014616227006
+Script.Message: [LOG] 100 18 0.305 0.305000083561107 0.305001310279354
+Script.Message: [LOG] 110 17 0.305 0.305000395085242 0.305003327417544
+Script.Message: [LOG] 120 17 0.305 0.305000466637396 0.305002183134794
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Olihut Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Olihut Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 130 16 0.304998600016525 0.305000475042224 0.305002183134794
+Script.Message: [LOG] 140 12 0.304999767422245 0.305000714534574 0.305002371254388
+Script.Message: [LOG] 150 11 0.305000000246894 0.305000877981346 0.305001448888702
+Script.Message: [LOG] 160 9 0.305000006297696 0.305000887801033 0.305001320584349
+Script.Message: [LOG] 170 6 0.305000602973205 0.305001559614208 0.30500801179846
+Script.Message: [LOG] 180 6 0.305000804220435 0.305001806405749 0.30500801179846
+Script.Message: [LOG] 190 6 0.305000490449916 0.305001722941536 0.305004708364288
+Script.Message: [LOG] 200 8 0.305001347039751 0.305001968518278 0.305004708364288
+Script.Message: [LOG] 210 8 0.226666659570871 0.301271678694051 0.305004708364288
+Script.Message: [LOG] 220 7 0.30500074486553 0.305001717453303 0.305004708364288
+Script.Message: [LOG] 230 6 0.305001266912217 0.305001774127776 0.305004708364288
+Script.Message: [LOG] 240 9 0.304997491802714 0.305002155352774 0.305008442785404
+Script.Message: [LOG] 250 9 0.304999918571956 0.305002395233983 0.305008442785404
+Script.Message: [LOG] 260 9 -0.0160001893244833 0.289716427321418 0.305008442785404
+Script.Message: [LOG] 270 9 0.305000942501145 0.305002118719078 0.305008442785404
+Script.Message: [LOG] 280 10 0.305000931831508 0.305002103630283 0.305009496146827
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ygukaf Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ygukaf Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 290 9 -0.0166666248867186 0.289684506201404 0.305009496146827
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Etici Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Etici Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 300 10 -0.0159999062435175 0.289716259219002 0.305009496146827
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Isasak Sehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Isasak Sehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 310 11 0.304995758873498 0.305002273242692 0.305009496146827
+Script.Message: [LOG] 320 14 0.304987393158065 0.30500212629358 0.305009496146827
+Script.Message: [LOG] 330 13 0.305000958085197 0.305002672103913 0.305009496146827
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 340 13 0.305001416526985 0.305003446231764 0.305015294630971
+Script.Message: [LOG] 350 11 0.305001900008608 0.305004838144251 0.305015294630971
+Script.Message: [LOG] 360 12 0.304986933571983 0.305003678625031 0.305007934661202
+Script.Message: [LOG] 370 12 -0.0166665369466498 0.289687237907769 0.305009330817729
+Script.Message: [LOG] 380 9 0.305002124147643 0.30500657486746 0.305012543661057
+Script.Message: [LOG] 390 9 0.305002844720464 0.305006413943083 0.305012543661057
+Script.Message: [LOG] 400 10 0.304992184555846 0.30500507706223 0.305012543661057
+Script.Message: [LOG] 410 11 0.304992184555846 0.30500616424765 0.305013191127549
+Script.Message: [LOG] 420 9 -0.0159991973532461 0.289720703516433 0.305012543661057
+Script.Message: [LOG] 430 11 0.304997640402353 0.305006310368237 0.305012543661057
+Script.Message: [LOG] 440 12 0.305003770477679 0.30500713687272 0.305012288374085
+Script.Message: [LOG] 450 12 0.305003770477679 0.305007193629835 0.305012019889712
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Egiciw Esyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Egiciw Esyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 460 11 0.305001605730374 0.305006872877269 0.305012019889712
+Script.Message: [LOG] 470 12 0.304995739662736 0.305007048966253 0.305012019889712
+Script.Message: [LOG] 480 13 0.304997712243075 0.305006744527624 0.305012019889712
+Script.Message: [LOG] 490 13 0.305002009152418 0.305006299009086 0.305012019889712
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 500 15 0.304988161432501 0.305006371140693 0.305012150574506
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Adamiz Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Adamiz Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 510 14 0.304998983645254 0.305006808502416 0.305012019889712
+Script.Message: [LOG] 520 15 0.305000881372862 0.305007136318512 0.305012019889712
+Script.Message: [LOG] 530 16 0.305005607321381 0.305008954967964 0.305014255038581
+Script.Message: [LOG] 540 16 0.305000809155155 0.305009325735198 0.305018481137067
+Script.Message: [LOG] 550 15 0.305001386363779 0.30500874996506 0.305018481137067
+Script.Message: [LOG] 560 15 0.305004618932763 0.305009566771508 0.305018481137067
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Urukuw Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Urukuw Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 570 12 0.3050067370065 0.305010783640531 0.305017734153822
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Oicid Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Oicid Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 580 10 0.305002229565055 0.305009525418012 0.305017809548622
+Script.Message: [LOG] 590 12 0.305006335962529 0.305009872035342 0.305017809548622
+Script.Message: [LOG] 600 11 0.304985521967097 0.30500797889847 0.305017809548622
+Script.Message: [LOG] 610 10 0.305003859339127 0.305007578092945 0.305017809548622
+Script.Message: [LOG] 620 13 0.305003859339127 0.305008822623 0.305017594997327
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 630 14 0.305005404628299 0.305010425371962 0.305024055567719
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Elukis Sehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Elukis Sehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 640 14 0.305003906959466 0.305010387134852 0.305024055567719
+Script.Message: [LOG] 650 13 0.305005301093659 0.305010462992704 0.305024055567719
+Script.Message: [LOG] 660 16 0.304997733401766 0.305010769400496 0.305024055567719
+Script.Message: [LOG] 670 14 0.304993378696631 0.305010996828429 0.305022556982641
+Script.Message: [LOG] 680 13 0.305007744880363 0.305010200880771 0.305022556982641
+Script.Message: [LOG] 690 14 0.305006120646552 0.305010234308813 0.305022556982641
+Script.Message: [LOG] 700 14 0.304979986101799 0.305009729525008 0.305022105857027
+Script.Message: [LOG] 710 14 0.304989209518234 0.305010864868441 0.305022105857027
+Script.Message: [LOG] 720 14 0.304986461809731 0.305011126099803 0.305022105857027
+Script.Message: [LOG] 730 13 0.305004134503683 0.305011090344838 0.305021551874405
+Script.Message: [LOG] 740 12 0.304999560133235 0.305010090956953 0.305021551874405
+Script.Message: [LOG] 750 14 0.304999109128485 0.305009734755304 0.305017694129221
+Script.Message: [LOG] 760 12 0.305000001015016 0.305010757329358 0.305017694129221
+Script.Message: [LOG] 770 13 0.305008184881982 0.305011522201244 0.305017694129221
+Script.Message: [LOG] 780 13 0.305002387493392 0.30501001126826 0.305017694129221
+Script.Message: [LOG] 790 13 -0.0159923796569202 0.289722996023182 0.305017694129221
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ofukac Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ofukac Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Uhukin Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uhukin Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 800 14 0.304988016712453 0.305007997903773 0.305017694129221
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Edasaz Ehehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Edasaz Ehehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 810 14 0.305000499534356 0.305008574266104 0.305016685710664
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Oicig Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Oicig Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 820 13 0.30500158491391 0.305008913375687 0.305017779895979
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ifukuw Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ifukuw Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ugicin Sehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ugicin Sehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 830 13 0.30500441273196 0.305009913788249 0.305015983092832
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Uhasum Esehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uhasum Esehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 840 15 0.305004138074659 0.305010057272936 0.305015983092832
+Script.Message: [LOG] 850 16 0.305001101187322 0.305010383271339 0.305015983092832
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Iwicug Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Iwicug Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 860 16 0.226666659570871 0.3012811312685 0.305018309662883
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ukuku Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ukuku Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Ohukun Yhehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ohukun Yhehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Idicin Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Idicin Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 870 16 0.305000161105737 0.305011896834402 0.305022621168104
+Script.Message: [LOG] 880 16 0.304999519950475 0.305011149959879 0.305022621168104
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 890 17 0.304996188932609 0.305013126346007 0.305043185533105
+Script.Message: [LOG] 900 16 0.305001454227119 0.305014168641044 0.305043185533105
+Script.Message: [LOG] 910 17 0.305005713977863 0.305013792691781 0.305043185533105
+Script.Message: [LOG] 920 17 0.305005083096989 0.305013206052847 0.305043185533105
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Egukun Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Egukun Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 930 18 0.305003557666253 0.305013552813483 0.305043185533105
+Script.Message: [LOG] 940 19 -0.0159968677808159 0.289728160183189 0.305043185533105
+Script.Message: [LOG] 950 18 0.304990390997427 0.305015198091091 0.305043185533105
+Script.Message: [LOG] 960 17 0.305009377305712 0.305015669573091 0.305043185533105
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Upasag Sehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Upasag Sehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 970 16 0.305009686287691 0.305016456082212 0.305043185533105
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Uhamus Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uhamus Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Yhuduh Yhehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Yhuduh Yhehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 980 15 0.305001521631156 0.305014121439966 0.305022615955074
+Script.Message: [LOG] 990 16 0.305007572763659 0.305014819715889 0.30502378995103
+Script.Message: [LOG] 1000 17 0.30500590121336 0.305014540368717 0.30502378995103
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Yhituc Ehyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Yhituc Ehyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1010 17 0.305001749849728 0.305013877647974 0.30502378995103
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Imamam Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Imamam Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1020 16 0.304999081746255 0.305013417985428 0.305022615955074
+Script.Message: [LOG] 1030 16 0.305 0.305013469412166 0.305022615955074
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ehicur Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ehicur Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1040 17 0.305002251431649 0.305013838756756 0.305022615955074
+Script.Message: [LOG] 1050 16 0.305004546948288 0.305014508440822 0.305023019661319
+Script.Message: [LOG] 1060 19 0.304975816877397 0.305013520119931 0.305023019661319
+Script.Message: [LOG] 1070 18 0.305000945955542 0.30501406330212 0.305023019661319
+Script.Message: [LOG] 1080 18 0.305005283274033 0.305012976476133 0.305023019661319
+Script.Message: [LOG] 1090 18 0.304987851821024 0.305011323733355 0.305023019661319
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Etasip Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Etasip Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Anezas Esyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Anezas Esyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1100 17 0.304975816877397 0.305010823631084 0.305018524490762
+Script.Message: [LOG] 1110 17 0.305003385902137 0.305011838004825 0.305018524490762
+Script.Message: [LOG] 1120 17 0.30500668987484 0.305011771964919 0.305019459531744
+Script.Message: [LOG] 1130 18 0.304982467777684 0.305013015830154 0.305028307571677
+Script.Message: [LOG] 1140 14 0.30500830191176 0.305013520256227 0.305022198000473
+Script.Message: [LOG] 1150 13 0.305005043219081 0.305014316051469 0.305023217214385
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ofasaf Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ofasaf Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ylogat Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ylogat Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1160 11 0.305009951573606 0.305015149698776 0.305022290283432
+Script.Message: [LOG] 1170 11 0.305005366068493 0.30501498147493 0.305022290283432
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ezynik Sehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ezynik Sehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1180 13 0.30498731382219 0.305012317137734 0.30501969038279
+Script.Message: [LOG] 1190 12 0.304988310873451 0.305013293447235 0.305026365901364
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1200 11 0.305009373670964 0.305017083526526 0.305066922984794
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Uryniz Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uryniz Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1210 11 -0.0159951436315685 0.289730675390371 0.305066922984794
+Script.Message: [LOG] 1220 12 0.305003298993051 0.305016316128458 0.305066922984794
+Script.Message: [LOG] 1230 12 0.305003061537824 0.305015494377009 0.305066922984794
+Script.Message: [LOG] 1240 12 0.305008893348514 0.305014575428324 0.305066922984794
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ahoguk Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ahoguk Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1250 16 0.305008893348514 0.305019678227318 0.305084871576292
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1260 17 0.30501168549311 0.305035679220004 0.305140475586691
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ywitaf Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ywitaf Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1270 15 0.304818124325821 0.305030810055336 0.305129498685697
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1280 14 0.30500135928961 0.30594408957889 0.321267563174047
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Omitan Sehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Omitan Sehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Afuda Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Afuda Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1290 14 0.304602653578983 0.30594506558305 0.321267563174047
+Script.Message: [LOG] 1300 12 0.304929653018163 0.30595336893879 0.321267563174047
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1310 12 0.304994880924791 0.307450486222785 0.333205558547363
+Script.Message: [LOG] 1320 14 0.305076513975634 0.30839125640121 0.333205558547363
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1330 12 0.305381125263617 0.31271976020172 0.346310916751156
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1340 14 0.305415874775742 0.321378444016856 0.354313821461878
+Script.Message: [LOG] 1350 14 0.306927808110717 0.326244159640034 0.354313821461878
+Script.Message: [LOG] 1360 15 0.317395829583575 0.333023492937246 0.346310916751156
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1370 14 0.325815683653646 0.337438973955893 0.35469635576449
+Script.Message: [LOG] 1380 15 -0.0140393061172958 0.322496518396291 0.35469635576449
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Uludas Yhehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uludas Yhehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1390 13 0.305000003339785 0.339192030324152 0.35469635576449
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Anudif Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Anudif Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Yuduh Syhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Yuduh Syhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1400 13 0.322252068903777 0.338467980612053 0.35469635576449
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Emitig Esehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Emitig Esehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1410 16 0.332874227650786 0.33977403240876 0.35469635576449
+Script.Message: [LOG] 1420 16 -0.016673651077235 0.322172645719269 0.352847352947263
+Script.Message: [LOG] 1430 14 0.33254661315933 0.339469896039868 0.35340565880247
+Script.Message: [LOG] 1440 17 0.320794659114722 0.340139448933589 0.35340565880247
+Script.Message: [LOG] 1450 16 0.316092384252137 0.339215362696705 0.350289730387542
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ufitud Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ufitud Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ykudis Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ykudis Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1460 16 0.336485666036947 0.343009880902207 0.364855004744747
+Script.Message: [LOG] 1470 13 0.337987837707511 0.344582637610208 0.354614080665358
+Script.Message: [LOG] 1480 12 0.338303933184379 0.34368571692265 0.354614080665358
+Script.Message: [LOG] 1490 13 0.333520568380037 0.343229009449039 0.349816641991042
+Script.Message: [LOG] 1500 12 0.304991030642242 0.341957266211917 0.349816641991042
+Script.Message: [LOG] 1510 12 0.340048832315653 0.344203224590815 0.354825114882199
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ukitag Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ukitag Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1520 13 0.305216014412985 0.342544518976402 0.354825114882199
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1530 15 0.339548709829471 0.344913921382038 0.370133575943922
+Script.Message: [LOG] 1540 16 0.339548709829471 0.344774145453817 0.370133575943922
+Script.Message: [LOG] 1550 14 0.339366722249497 0.346507413811912 0.367421141878376
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Atamap Ysehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Atamap Ysehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1560 14 0.336030512376849 0.34430270955994 0.367421141878376
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Isudug Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Isudug Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ysitig Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ysitig Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1570 15 0.337771291473273 0.34591223083036 0.367421141878376
+Script.Message: [LOG] 1580 15 0.311939540588117 0.348192662284524 0.367421141878376
+Script.Message: [LOG] 1590 16 0.337149883968884 0.349201767658781 0.367421141878376
+Script.Message: [LOG] 1600 15 0.341903206235601 0.352427247576096 0.367421141878376
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ihola Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ihola Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1610 15 0.342053251648202 0.354484787493559 0.367421141878376
+Script.Message: [LOG] 1620 15 0.348853141785285 0.35632883410278 0.367421141878376
+Script.Message: [LOG] 1630 12 0.30405478618344 0.35479236719792 0.368964770734403
+Script.Message: [LOG] 1640 12 0.226666659570871 0.351883657602839 0.368964770734403
+Script.Message: [LOG] 1650 12 0.344221673445901 0.357503059651398 0.368964770734403
+Script.Message: [LOG] 1660 11 0.353394394577271 0.357402001269615 0.368964770734403
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Azedas Yhehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Azedas Yhehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1670 10 0.350472636064641 0.357507645910622 0.368964770734403
+Script.Message: [LOG] 1680 10 0.347543448488621 0.356925414998882 0.368964770734403
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1690 10 0.333646837566753 0.355489079813726 0.371588703158699
+Script.Message: [LOG] 1700 10 0.351455606935005 0.355976031636054 0.371588703158699
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Elamul Sehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Elamul Sehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1710 11 0.340271907044712 0.355443474498421 0.371588703158699
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Inamuw Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Inamuw Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1720 12 0.35189691088703 0.358290208546506 0.371588703158699
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1730 12 0.226337772668099 0.353318258363099 0.372430606180149
+Script.Message: [LOG] 1740 13 0.347554370834264 0.359290733851049 0.372430606180149
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Uledic Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uledic Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Emudun Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Emudun Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1750 10 0.354226335766705 0.35924131140846 0.372430606180149
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ysamat Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ysamat Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1760 9 0.353284423977534 0.357965367603464 0.372430606180149
+Script.Message: [LOG] 1770 12 0.35214132885447 0.358155806121823 0.372430606180149
+Script.Message: [LOG] 1780 12 0.353284423977534 0.359614376782948 0.371588703158699
+Script.Message: [LOG] 1790 11 0.355128484109466 0.361001465940471 0.371588703158699
+Script.Message: [LOG] 1800 10 0.305000001015016 0.359838764447981 0.371588703158699
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ykituz Sehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ykituz Sehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1810 11 0.304992873191269 0.361565566691893 0.398768769862101
+Script.Message: [LOG] 1820 11 0.226672286364393 0.358571986428896 0.398768769862101
+Script.Message: [LOG] 1830 9 0.358564567777601 0.36293334327077 0.398768769862101
+Script.Message: [LOG] 1840 11 0.356100018953629 0.363405821723925 0.398768769862101
+Script.Message: [LOG] 1850 13 0.355117078761358 0.364490775705127 0.398768769862101
+Script.Message: [LOG] 1860 12 0.358429062986275 0.364720311626124 0.398768769862101
+Script.Message: [LOG] 1870 14 -0.0165871375663029 0.34565695242788 0.398768769862101
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1880 14 0.358429062986275 0.36893605210583 0.400031010289825
+Script.Message: [LOG] 1890 16 -0.0162243154933531 0.352199564908588 0.398768769862101
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Epysun Esehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Epysun Esehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1900 13 0.361331952418571 0.373692888326287 0.407189485131381
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Inudit Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Inudit Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1910 13 0.305012843858686 0.373489885430165 0.408676419288813
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1920 14 0.339656276212788 0.381161944713295 0.40910657632981
+Script.Message: [LOG] 1930 13 0.367309101174261 0.384869560615336 0.40910657632981
+Script.Message: [LOG] 1940 14 0.305096300637848 0.385160895128953 0.40910657632981
+Script.Message: [LOG] 1950 15 0.375015642198774 0.39058625609244 0.40910657632981
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 1960 14 0.385869136234097 0.396894810573083 0.411938737331325
+Script.Message: [LOG] 1970 13 0.377949586606925 0.398289669190847 0.411938737331325
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Arysus Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Arysus Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1980 13 0.35366904438451 0.3957409021186 0.412999699680311
+Script.Message: [LOG] 1990 12 0.305490477463281 0.395616872005655 0.412999699680311
+Script.Message: [LOG] 2000 10 0.394592855610029 0.398582761827089 0.412999699680311
+Script.Message: [LOG] 2010 12 0.394592855610029 0.399523142748764 0.417202349142245
+Script.Message: [LOG] 2020 13 0.390048726384031 0.398398400633679 0.417202349142245
+Script.Message: [LOG] 2030 14 0.384954836986254 0.398325424021036 0.40910657632981
+Script.Message: [LOG] 2040 15 0.366879019114726 0.39520072253953 0.403717810061724
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ededan Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ededan Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2050 15 0.386589939629708 0.399684058508069 0.431252648667556
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Idygup Syhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Idygup Syhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2060 17 0.15 0.390298301323119 0.431252648667556
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2070 16 0.39577011569611 0.405306828813295 0.438013725423656
+Script.Message: [LOG] 2080 17 0.397794686575601 0.408028892006669 0.438013725423656
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2090 15 0.395177494017975 0.408460846517897 0.438013725423656
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Etedar Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Etedar Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2100 16 0.384073825856733 0.409036223192055 0.438013725423656
+Script.Message: [LOG] 2110 16 0.380275147023371 0.407010165952743 0.438013725423656
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Amysuk Sehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Amysuk Sehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2120 12 0.394466522485637 0.408851104282388 0.438013725423656
+Script.Message: [LOG] 2130 12 0.304426430267473 0.405078407794701 0.438013725423656
+Script.Message: [LOG] 2140 12 0.402977988024239 0.409715414814012 0.438013725423656
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Iholih Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Iholih Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Acolum Ehyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Acolum Ehyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2150 13 0.339089902425104 0.405411948360606 0.438013725423656
+Script.Message: [LOG] 2160 12 0.391288880632337 0.406801731958756 0.438013725423656
+Script.Message: [LOG] 2170 14 0.400470500109624 0.412964933138028 0.426836233303168
+Script.Message: [LOG] 2180 16 0.308803252262842 0.409770912719699 0.426836233303168
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Aholas Ehehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Aholas Ehehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2190 16 0.402977988024239 0.416853623546021 0.431432915530943
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ymolid Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ymolid Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2200 15 0.226504374543666 0.407792349380208 0.431432915530943
+Script.Message: [LOG] 2210 14 0.314833557816929 0.412044435883571 0.431432915530943
+Script.Message: [LOG] 2220 11 0.371162850037857 0.416689034451097 0.430238449432592
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ykoliw Yhehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ykoliw Yhehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Yedi Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Yedi Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2230 11 0.3833451570509 0.412769672978337 0.430238449432592
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Uedak Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uedak Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2240 12 0.401812101951254 0.414864398345359 0.432341125166156
+Script.Message: [LOG] 2250 13 0.400069391988742 0.411717257094522 0.432341125166156
+Script.Message: [LOG] 2260 13 0.405383836843009 0.414286268751041 0.432647866365306
+Script.Message: [LOG] 2270 15 0.383880594244655 0.408931462252627 0.432647866365306
+Script.Message: [LOG] 2280 16 0.391442852688172 0.412902752037826 0.432341125166156
+Script.Message: [LOG] 2290 15 0.32313310972665 0.408237229444 0.432341125166156
+Script.Message: [LOG] 2300 16 0.325193492980529 0.409469001215485 0.426565440281437
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2310 16 0.397260700346409 0.413392841947921 0.439183839161099
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Uteduw Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Uteduw Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2320 18 0.304999976961433 0.411529993429212 0.439183839161099
+Script.Message: [LOG] 2330 16 0.401323836369827 0.416288823858829 0.439183839161099
+Script.Message: [LOG] 2340 15 0.2269328614685 0.406716811837546 0.439183839161099
+Script.Message: [LOG] 2350 15 0.38999295361368 0.4131069515728 0.439183839161099
+Script.Message: [LOG] 2360 14 0.353664185324614 0.412284071989817 0.439183839161099
+Script.Message: [LOG] 2370 12 0.404248445824886 0.41379608516272 0.439183839161099
+Script.Message: [LOG] 2380 13 0.398223541352206 0.41336638810195 0.439183839161099
+Script.Message: [LOG] 2390 13 0.390562964870491 0.408796291124965 0.439183839161099
+Script.Message: [LOG] 2400 14 0.390562964870491 0.409225784643412 0.439183839161099
+Script.Message: [LOG] 2410 14 0.396989243462872 0.411399108792247 0.434480166282374
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Unolus Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Unolus Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2420 12 0.401888152929846 0.410684344666119 0.418725559611174
+Script.Message: [LOG] 2430 12 0.393079724924951 0.4101984353184 0.418725559611174
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Yhysuh Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Yhysuh Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2440 9 0.407751664774944 0.410513561123197 0.416804775923228
+Script.Message: [LOG] 2450 9 0.380956311072138 0.409291746747621 0.416804775923228
+Script.Message: [LOG] 2460 10 0.15 0.394462373691229 0.416804775923228
+Script.Message: [LOG] 2470 11 0.351097786591417 0.405127995976493 0.417002972054221
+Script.Message: [LOG] 2480 12 0.305063074735204 0.401435821993672 0.416804775923228
+Script.Message: [LOG] 2490 10 0.395113740139943 0.405418788908145 0.416804775923228
+Script.Message: [LOG] 2500 10 0.386249385492537 0.404682558554289 0.416804775923228
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2510 9 0.394401433114955 0.407390485254041 0.443785368314178
+Script.Message: [LOG] 2520 9 -0.0160000014800834 0.390750151076368 0.443785368314178
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2530 10 0.30592979980842 0.410476323459836 0.44519559958359
+Script.Message: [LOG] 2540 8 0.40046082193515 0.411507906962582 0.44519559958359
+Script.Message: [LOG] 2550 7 0.403771845671661 0.410560680283279 0.44519559958359
+Script.Message: [LOG] 2560 10 0.39795086906549 0.41187579062892 0.44519559958359
+Script.Message: [LOG] 2570 11 0.304997903546867 0.407941532057702 0.44519559958359
+Script.Message: [LOG] 2580 11 0.365410462635336 0.411353331239934 0.44519559958359
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Adeda Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Adeda Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2590 12 0.306379393229622 0.408244608359334 0.453534978741653
+Script.Message: [LOG] 2600 13 0.399176525551135 0.41322688865373 0.453534978741653
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Aledag Yhehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Aledag Yhehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Edolar Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Edolar Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2610 12 0.394434565325079 0.409499361163925 0.443755523179612
+Script.Message: [LOG] 2620 11 0.396984781649398 0.409868042247028 0.443755523179612
+Script.Message: [LOG] 2630 13 0.226664283846426 0.401348383419347 0.443755523179612
+Script.Message: [LOG] 2640 12 0.396984781649398 0.410765639352683 0.443755523179612
+Script.Message: [LOG] 2650 11 0.402898550258427 0.410677508244601 0.443755523179612
+Script.Message: [LOG] 2660 11 0.398686178466657 0.410573965307952 0.443755523179612
+Script.Message: [LOG] 2670 11 0.38192517007811 0.40684712218785 0.430344101115176
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Esysat Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Esysat Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 2 warning(s) while creating 'Erolan Yhehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Erolan Yhehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2680 13 0.229639796783751 0.400035753457221 0.430344101115176
+Script.Message: [LOG] 2690 13 0.390061413942107 0.409856296521948 0.431922582037503
+Script.Message: [LOG] 2700 14 -0.0160008077916332 0.388704579325223 0.431922582037503
+Script.Message: [LOG] 2710 15 0.39509856830915 0.409831972702089 0.431922582037503
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ylediw Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ylediw Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2720 13 0.400477400617694 0.410624886127185 0.431922582037503
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Isolam Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Isolam Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2730 13 0.389086296916275 0.410362779390247 0.431922582037503
+Script.Message: [LOG] 2740 11 0.388852673722945 0.410150986067536 0.430344101115176
+Script.Message: [LOG] 2750 10 0.402773725097889 0.411840208056916 0.430344101115176
+Script.Message: [LOG] 2760 9 0.401891074591534 0.412357496814276 0.439803041412644
+Script.Message: [LOG] 2770 11 0.390835833400818 0.412221804859643 0.439803041412644
+Script.Message: [LOG] 2780 11 0.392325489005557 0.412435799492909 0.439803041412644
+Script.Message: [LOG] 2790 10 0.406001263308912 0.413847851864046 0.439803041412644
+Script.Message: [LOG] 2800 8 0.382307766665297 0.409953218120582 0.439803041412644
+Script.Message: [LOG] 2810 10 0.305693277642785 0.408576363285722 0.439803041412644
+Script.Message: [LOG] 2820 10 0.161227588533058 0.399404182820716 0.439803041412644
+Script.Message: [LOG] 2830 9 0.356959435463807 0.408144833284538 0.439803041412644
+Script.Message: [LOG] 2840 10 0.340682844870799 0.408580983848237 0.439803041412644
+FileObject.write: Writing to file 'scripts_output\22604901.gen' (Improvement snapshot)
+Script.Message: [LOG] 2850 10 0.374589304820121 0.413163894700804 0.507318668805427
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Oweduh Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Oweduh Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Emysah Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Emysah Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2860 13 -0.016715848165904 0.390893061999464 0.439803041412644
+Script.Message: [LOG] 2870 13 0.377757590173021 0.409411657825888 0.439803041412644
+Script.Message: [LOG] 2880 13 0.305695821071535 0.406165419146324 0.424900569409961
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ohedut Yhehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ohedut Yhehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2890 12 0.388163641577289 0.411077696514773 0.424900569409961
+Script.Message: [LOG] 2900 12 0.402931619466339 0.415171599361052 0.427290579008728
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Inolas Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Inolas Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2910 11 0.00731080946835447 0.395915381037909 0.427290579008728
+Script.Message: [LOG] 2920 11 0.305000004083791 0.412000855873666 0.434914787748101
+Script.Message: [LOG] 2930 9 0.405145801669154 0.415886496292657 0.434914787748101
+Script.Message: [LOG] 2940 12 0.384562798957258 0.412292818433389 0.438823412677905
+Script.Message: [LOG] 2950 12 0.387927214916058 0.412721908354785 0.438823412677905
+Script.Message: [LOG] 2960 13 0.397405849364166 0.41483197889736 0.438823412677905
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Aweduk Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Aweduk Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2970 14 0.357877075924031 0.410602808342994 0.438823412677905
+Script.Message: [LOG] 2980 13 0.397405849364166 0.412738690384281 0.438823412677905
+Script.Message: [LOG] 2990 14 0.342822251012279 0.409816368123186 0.438823412677905
+Script.Message: [LOG] 3000 16 0.304998589602418 0.407719619858307 0.438823412677905
+> Script.Message: Experiment saved (15 genotypes)
+> Shell closed.

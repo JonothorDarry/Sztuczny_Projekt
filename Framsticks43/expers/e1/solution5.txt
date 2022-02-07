@@ -1,0 +1,463 @@
+Framsticks command-line interface and server (free), version 4.3
+Supported features: Multi-threading[+], ODE[+], Python[-]
+Homepage:  http://www.framsticks.com/
+
+VMNeuronManager.autoload: Neuro classes added: Delay Light Nn PIDP PIDV SeeLight SeeLight2 S0 S1 Thr 
+UserScripts.autoload: 18 user scripts added.
+Simulator.load: Loading from 'default.sim'
+Loader.load: Comments read from file follow:
+Loader.load:  created Thu May 25 15:57:54 2006
+Loader.load:  by Framsticks 2.11
+Simulator.load: Settings loaded from 'default.sim'
+---------------------------------------------------
+Basic commands:
+ - help      : show this help message
+ - qu or EOF : leave command shell
+ - lo FILENAME  : load experiment, genotypes, settings (expt/gen/sim)
+ - sa FILENAME  : save experiment (expt)
+ - st        : do single simulation step
+ - st NNN    : do NNN simulation steps
+ - go        : simulate until interrupted (ctrl+c)
+ - lm        : list all commandline macros
+> Simulator.load: Loading from 'Zadanie3.sim'
+Loader.load: Comments read from file follow:
+Loader.load:  created Mon Feb  7 03:57:38 2022
+Loader.load:  by Framsticks 4.3
+Simulator.load: Settings loaded from 'Zadanie3.sim'
+> > Script.Message: [LOGTITLE] MECHA rnd=(0.0,0.0,0.01) popsize=20 gen.ops.=(20.0,64.0,16.0)
+> > FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1 1 0.15 0.15 0.15
+Script.Message: [LOG] 10 7 0.15 0.15 0.15
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 20 12 0.15 0.1615 0.226666666666667
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ofygaz Ysy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ofygaz Ysy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 30 15 0.15 0.171904761901951 0.226666666666667
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 40 18 0.15 0.190317460296664 0.304999999811153
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 50 14 0.15 0.234523566523073 0.305
+Script.Message: [LOG] 60 16 0.226666666666667 0.275158487106847 0.305
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 70 17 0.304999999473789 0.305000936150934 0.30501966309508
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 80 20 -0.0160038994966967 0.289716877594372 0.30503866838077
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 90 17 0.226661103295802 0.301912359440789 0.318440115415716
+Script.Message: [LOG] 100 17 -0.016 0.29099255479878 0.318392660089331
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 110 13 0.304999999917563 0.306920418561452 0.318485137196323
+Script.Message: [LOG] 120 15 0.226666666666667 0.303829528070605 0.318485137196323
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 130 16 0.305 0.310376527185702 0.32369298737802
+Script.Message: [LOG] 140 17 0.305000000248935 0.313692638065472 0.32369298737802
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 150 15 0.315473337793739 0.320317364653969 0.32379191845986
+Script.Message: [LOG] 160 15 0.304990152642002 0.320323851515577 0.32379191845986
+Script.Message: [LOG] 170 13 0.318472725154816 0.321927460034451 0.32379191845986
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 180 13 0.226676063546584 0.320023066370577 0.344452936222812
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 190 13 0.323593947196159 0.326650054125168 0.344452936222812
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Oydat Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Oydat Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 200 14 0.323676784214072 0.331616140403494 0.344459249912517
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 210 12 0.323791740845152 0.346264480115872 0.392263046595086
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 220 14 0.339146621466133 0.36120517318584 0.392263502077204
+Script.Message: [LOG] 230 16 0.0319298088417867 0.347668613925907 0.392263502077204
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 240 13 0.344459249912517 0.383049986361413 0.393036228577608
+Script.Message: [LOG] 250 13 0.305000000221543 0.388108661328168 0.393036228577608
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 260 14 0.392263046595086 0.392510188349075 0.393723687551976
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 270 16 0.392263502077203 0.39977156323 0.538887352675848
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 280 15 0.392274352045215 0.417939964064235 0.538887352675849
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 290 15 -0.0159989696279588 0.433320025526295 0.538887352675849
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 300 17 0.393723687551975 0.489652629735931 0.538887371822508
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 310 17 0.471815317026047 0.529293461761391 0.538891538064641
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 320 17 0.538882885889314 0.538888287183564 0.538891538064641
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 330 15 0.50730718663347 0.53738564893344 0.538908944438164
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Arimic Hyhy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Arimic Hyhy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 340 11 0.538887371822507 0.538890484070678 0.538908944438164
+Script.Message: [LOG] 350 11 0.538882485483857 0.538892301584967 0.538908944438164
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 360 10 0.538888578276312 0.538898739885665 0.538912215585616
+Script.Message: [LOG] 370 11 0.538890567399632 0.538902571818412 0.538910375464501
+Script.Message: [LOG] 380 10 0.538891261889827 0.538905350684213 0.538910607248312
+Script.Message: [LOG] 390 6 0.538900778634082 0.538906715097833 0.538910607248312
+Script.Message: [LOG] 400 5 0.538903728471108 0.538907764920287 0.538911286222143
+Script.Message: [LOG] 410 6 0.397190236008643 0.532160018916628 0.538911286222143
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 420 8 0.538905237556265 0.538912108140375 0.538949521784283
+Script.Message: [LOG] 430 8 0.305005536227286 0.527774574741751 0.538949521784283
+Script.Message: [LOG] 440 8 -0.0159767295916028 0.512496467035576 0.538949521784283
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 450 11 0.538912373587224 0.538927735633125 0.538954388927883
+Script.Message: [LOG] 460 13 0.538903955302441 0.538924137981875 0.538954388927883
+Script.Message: [LOG] 470 14 -0.0167271014804381 0.512465793381083 0.538954388927883
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 480 17 0.148404464830691 0.520338373078768 0.538978330816862
+Script.Message: [LOG] 490 17 0.538918193753466 0.538940458549606 0.538978330816862
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 500 17 0.538922734326367 0.538944675498652 0.538994848005858
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ityric Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ityric Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 510 19 0.538876679536053 0.538938638153969 0.538994848005858
+Script.Message: [LOG] 520 17 0.171380735161784 0.521434434793411 0.538994848005858
+Script.Message: [LOG] 530 14 0.361334492720614 0.530476813827133 0.53896360206551
+Script.Message: [LOG] 540 13 0.538913217249382 0.538935921098503 0.538976021397023
+Script.Message: [LOG] 550 13 0.53892509126539 0.538940420311597 0.538976021397023
+Script.Message: [LOG] 560 15 0.45734704478034 0.535058870210836 0.538971017331405
+Script.Message: [LOG] 570 15 0.538924301098787 0.538947035430427 0.538971017331405
+Script.Message: [LOG] 580 14 0.305069227830135 0.527812234709912 0.538971017331405
+Script.Message: [LOG] 590 14 0.538865835584885 0.538946807509398 0.538976928690409
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Urenil Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Urenil Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 600 13 0.538932679622637 0.538955875324369 0.539046538584537
+Script.Message: [LOG] 610 12 0.538853789487934 0.538955088696579 0.539021574805734
+Script.Message: [LOG] 620 12 0.226666676446823 0.524091443716191 0.539021574805734
+Script.Message: [LOG] 630 12 0.53892484893167 0.538961160591999 0.539021574805734
+Script.Message: [LOG] 640 14 0.53887747698719 0.538959582986089 0.539021574805734
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ilowih Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ilowih Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 650 14 0.538896266057407 0.538960767157137 0.538995863902966
+Script.Message: [LOG] 660 14 0.538912172534794 0.538963402801214 0.539001529675402
+Script.Message: [LOG] 670 13 0.538847969596845 0.538957043338323 0.539001529675402
+Script.Message: [LOG] 680 14 0.174999063139084 0.521633499741474 0.539001529675402
+Script.Message: [LOG] 690 12 0.226676884313025 0.524092083506142 0.539001529675402
+Script.Message: [LOG] 700 12 0.538904242210975 0.538955532264496 0.539001529675402
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Okular Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Okular Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 710 11 0.538942032646719 0.538957434824817 0.539001529675402
+Script.Message: [LOG] 720 13 0.53890444379525 0.538958626530404 0.539001529675402
+Script.Message: [LOG] 730 13 0.538950706945046 0.538962270510864 0.539001529675402
+Script.Message: [LOG] 740 14 0.508836798220335 0.537527749214212 0.539001529675402
+Script.Message: [LOG] 750 13 0.538933112562137 0.538957869332682 0.539001529675402
+Script.Message: [LOG] 760 13 0.538918505498891 0.538957572637172 0.539001529675402
+Script.Message: [LOG] 770 13 0.538885981759362 0.538951972506554 0.539001529675402
+Script.Message: [LOG] 780 15 0.397055142060301 0.53219446767464 0.539001529675402
+Script.Message: [LOG] 790 14 0.304947183672513 0.527809696188768 0.539001529675402
+Script.Message: [LOG] 800 14 0.538843115526376 0.538949404089567 0.539001529675402
+Script.Message: [LOG] 810 13 0.538917686524199 0.538950739346468 0.539001529675402
+Script.Message: [LOG] 820 13 0.480202823008882 0.536153954968394 0.539001529675402
+Script.Message: [LOG] 830 13 0.30500382128125 0.527811591541422 0.539042553824179
+Script.Message: [LOG] 840 13 0.118416887947371 0.518923959618375 0.539042553824179
+Script.Message: [LOG] 850 15 0.103625889657607 0.518222412427384 0.539042553824179
+Script.Message: [LOG] 860 19 0.538922033519439 0.538958034201123 0.539042553824179
+Script.Message: [LOG] 870 20 0.386987847024526 0.531724161328787 0.539042553824179
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Onacat Tehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Onacat Tehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 880 18 0.538928572274293 0.538954934507769 0.539042553824179
+Script.Message: [LOG] 890 18 0.538880339987983 0.538952637732231 0.539042553824179
+Script.Message: [LOG] 900 16 0.538932821493308 0.538953369668092 0.539042553824179
+Script.Message: [LOG] 910 17 0.538873129700719 0.538952818507596 0.539042553824179
+Script.Message: [LOG] 920 18 0.0479005669401506 0.515571624657606 0.539042553824179
+Script.Message: [LOG] 930 19 0.538938796534141 0.538958416627374 0.539042553824179
+Script.Message: [LOG] 940 18 0.538944516334762 0.538960160837414 0.539042553824179
+Script.Message: [LOG] 950 18 0.538915983165532 0.538957478694849 0.539042553824179
+Script.Message: [LOG] 960 17 0.538947687481281 0.53896163004133 0.539042553824179
+Script.Message: [LOG] 970 18 0.538909758412083 0.538959277168092 0.539042553824179
+Script.Message: [LOG] 980 17 0.538933455812481 0.538958953566768 0.539042553824179
+Script.Message: [LOG] 990 16 0.53888382452122 0.538954616962752 0.539042553824179
+Script.Message: [LOG] 1000 15 0.538923997039404 0.538949811014719 0.538983076664783
+Script.Message: [LOG] 1010 17 0.1182225274967 0.518918609505685 0.538983076664783
+Script.Message: [LOG] 1020 16 0.538882137283309 0.538950732193289 0.539032202750811
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1030 16 0.538928661871139 0.538958852686689 0.539051500401039
+Script.Message: [LOG] 1040 16 0.53892358105662 0.53896077994715 0.539051500401039
+Script.Message: [LOG] 1050 15 0.538919236567038 0.538955146931251 0.539051500401039
+Script.Message: [LOG] 1060 16 0.53892020841111 0.538963290750702 0.539051500401039
+Script.Message: [LOG] 1070 15 0.538890599601437 0.538954768821936 0.539051500401039
+Script.Message: [LOG] 1080 13 0.415318996029931 0.533065386470702 0.539051500401039
+Script.Message: [LOG] 1090 12 0.538923985931302 0.538949234501987 0.539051500401039
+Script.Message: [LOG] 1100 15 0.538894917826695 0.538953853654781 0.539051500401039
+Script.Message: [LOG] 1110 15 0.538923951158853 0.538952216384769 0.539051500401039
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1120 16 0.538918718381598 0.542517974182421 0.613832159325279
+Script.Message: [LOG] 1130 15 0.538939163666679 0.546088162368614 0.613832159325279
+Script.Message: [LOG] 1140 14 0.538924343576693 0.54609119869757 0.613832159325279
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1150 16 0.538938882105886 0.571041317997158 0.613869517938306
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1160 17 0.53895974358432 0.592432364568228 0.613931938970744
+Script.Message: [LOG] 1170 16 0.613758786811105 0.613823719757138 0.613931938970744
+Script.Message: [LOG] 1180 13 0.613783918369684 0.613830583572628 0.613931938970744
+Script.Message: [LOG] 1190 14 0.613813120099573 0.613842892265104 0.613892158787052
+Script.Message: [LOG] 1200 15 0.304999992293424 0.599140318965428 0.613892158787052
+Script.Message: [LOG] 1210 14 0.61381866720772 0.613848985088041 0.613883584258728
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1220 15 0.613844624021865 0.613866659592964 0.613935881028852
+Script.Message: [LOG] 1230 15 0.613840145208576 0.613866501356379 0.613935881028852
+Script.Message: [LOG] 1240 15 0.613817571738438 0.61387235887364 0.613935881028852
+Script.Message: [LOG] 1250 15 0.613838940348702 0.613865634567356 0.613935881028852
+Script.Message: [LOG] 1260 17 0.613840502150476 0.613868450994888 0.613935881028852
+Script.Message: [LOG] 1270 15 0.613663933651737 0.613852935770851 0.613935881028852
+Script.Message: [LOG] 1280 17 0.613841798406727 0.613867149059179 0.613935881028852
+Script.Message: [LOG] 1290 18 0.420913894314088 0.604683576068996 0.613935881028852
+Script.Message: [LOG] 1300 17 0.613817515922127 0.61386363601758 0.613935881028852
+Script.Message: [LOG] 1310 19 -0.0166670824333315 0.583848561412154 0.613935881028852
+Script.Message: [LOG] 1320 17 0.613795512578932 0.613871313313296 0.613907315338507
+Script.Message: [LOG] 1330 15 0.613736309324056 0.613868272890081 0.613907315338507
+Script.Message: [LOG] 1340 14 0.613748586923478 0.6138722992284 0.613907315338507
+Script.Message: [LOG] 1350 13 0.305003264665202 0.599162448510493 0.613907315338507
+Script.Message: [LOG] 1360 12 0.30500711156939 0.59915892113429 0.613907315338507
+Script.Message: [LOG] 1370 13 0.613839690839169 0.61386772177456 0.613908645210019
+Script.Message: [LOG] 1380 12 0.613839288534545 0.613866390749398 0.613915563660856
+Script.Message: [LOG] 1390 11 0.613775836085773 0.613868786799227 0.613927504505157
+Script.Message: [LOG] 1400 11 0.613701702988055 0.613867480290623 0.613927504505157
+Script.Message: [LOG] 1410 11 0.613758882574397 0.613863962507625 0.613927504505157
+Script.Message: [LOG] 1420 10 0.538896095465697 0.610311794706458 0.613927504505157
+Script.Message: [LOG] 1430 9 0.613822973686475 0.613888664025906 0.613927504505157
+Script.Message: [LOG] 1440 9 0.613794211823505 0.61388996622661 0.613927504505157
+Script.Message: [LOG] 1450 11 0.613865117624671 0.613893201820302 0.613927504505157
+Script.Message: [LOG] 1460 12 0.61387013415941 0.613899630982454 0.613927504505157
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1470 13 0.613889592108815 0.613905079449612 0.613958603407572
+Script.Message: [LOG] 1480 13 0.613836735682451 0.613895951306156 0.613958603407572
+Script.Message: [LOG] 1490 13 0.472065162177923 0.607139781247188 0.613958603407572
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1500 14 0.613747899778576 0.616389432453239 0.666291907224773
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1510 14 0.613890625898321 0.621394662643128 0.6663725739957
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1520 21 0.613894890420452 0.641362124022072 0.666380638784553
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1530 20 0.613958603407572 0.663808268169249 0.666391385324146
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1540 19 0.66626696056093 0.66633821627 0.666431171182317
+Script.Message: [LOG] 1550 19 0.666301181558703 0.666362978451746 0.666431171182317
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1560 18 0.666335395555618 0.666378090422563 0.666455427805819
+Script.Message: [LOG] 1570 17 0.666347151921893 0.666382203684659 0.666455427805819
+Script.Message: [LOG] 1580 16 0.666339416505654 0.666371185920625 0.666455427805819
+Script.Message: [LOG] 1590 16 0.666336320555354 0.666370297281715 0.666394897100723
+Script.Message: [LOG] 1600 17 0.666290601864151 0.666376388108733 0.666440831952942
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Owigah Hehy' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Owigah Hehy)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1610 16 0.532078861073483 0.659987714025033 0.666440831952942
+Script.Message: [LOG] 1620 16 0.666309700178447 0.666380785830669 0.666440831952942
+Script.Message: [LOG] 1630 16 0.666350918062073 0.666381758489325 0.666440831952942
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 1640 17 0.666286194743626 0.666380367364766 0.66647542604214
+Script.Message: [LOG] 1650 15 0.666362475280531 0.666389009088765 0.66647542604214
+Script.Message: [LOG] 1660 16 -0.0171277863292231 0.633842248462712 0.66647542604214
+Script.Message: [LOG] 1670 15 0.666360484776364 0.666397573117452 0.66647542604214
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Atulug Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Atulug Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1680 15 0.666348584943108 0.666395758867759 0.66647542604214
+Script.Message: [LOG] 1690 15 0.666344126094916 0.666395475936322 0.66647542604214
+Script.Message: [LOG] 1700 15 0.66637409529223 0.666402076884551 0.66647542604214
+Script.Message: [LOG] 1710 14 0.666301456830256 0.666392375573312 0.66647542604214
+Script.Message: [LOG] 1720 12 0.666363223532324 0.666391824311968 0.666428729192924
+Script.Message: [LOG] 1730 12 0.666382364683178 0.666394712654158 0.666428729192924
+Script.Message: [LOG] 1740 12 0.666250932865464 0.666392203848608 0.666439444474437
+Script.Message: [LOG] 1750 11 0.666309593958193 0.666396748758047 0.666439444474437
+Script.Message: [LOG] 1760 10 0.666356271139103 0.666400501915754 0.666439444474437
+Script.Message: [LOG] 1770 10 0.666391438058878 0.666401962850334 0.666434957180839
+Script.Message: [LOG] 1780 10 0.666359895913312 0.666395765213143 0.666434957180839
+Script.Message: [LOG] 1790 12 0.666352588919084 0.666398516140906 0.666434957180839
+Script.Message: [LOG] 1800 13 0.666366683965955 0.666398315329675 0.666434957180839
+Script.Message: [LOG] 1810 13 0.666368483386345 0.666397805929566 0.666434957180839
+Script.Message: [LOG] 1820 13 0.666383760886195 0.666398220353659 0.666428729192924
+Script.Message: [LOG] 1830 13 0.666317523154296 0.666397046876647 0.666428729192924
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Eaduh Yhehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Eaduh Yhehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 1840 11 0.666386270264256 0.666401458874484 0.666428729192924
+Script.Message: [LOG] 1850 13 0.66637693545062 0.666401534383804 0.666428729192924
+Script.Message: [LOG] 1860 14 0.666380523855361 0.66639946993895 0.66643037594043
+Script.Message: [LOG] 1870 13 0.666359663170766 0.666392595017663 0.666442508699044
+Script.Message: [LOG] 1880 12 0.666377717730723 0.666397180125555 0.666442508699044
+Script.Message: [LOG] 1890 11 0.666355111478037 0.666387709058088 0.666422838209405
+Script.Message: [LOG] 1900 10 0.196899383129136 0.644031121560932 0.666422838209405
+Script.Message: [LOG] 1910 13 0.666292217524003 0.666386354685891 0.666430120374186
+Script.Message: [LOG] 1920 13 0.581298648462423 0.662337630442245 0.666430120374186
+Script.Message: [LOG] 1930 14 0.666369130079378 0.666390730661258 0.666430120374186
+Script.Message: [LOG] 1940 14 0.666199106438399 0.666384273171417 0.666430120374186
+Script.Message: [LOG] 1950 10 0.666332488577259 0.666391497919931 0.666430120374186
+Script.Message: [LOG] 1960 9 0.305012763853417 0.649185072291762 0.666443303147087
+Script.Message: [LOG] 1970 8 0.666363961325205 0.666391083681414 0.666443303147087
+Script.Message: [LOG] 1980 10 0.226647259742733 0.645450105077512 0.666430120374186
+Script.Message: [LOG] 1990 11 0.226662076453902 0.645452435323971 0.666430120374186
+Script.Message: [LOG] 2000 9 0.66638257015809 0.666398581873523 0.66645540773791
+Script.Message: [LOG] 2010 10 0.666374400615852 0.666396846961189 0.66645540773791
+Script.Message: [LOG] 2020 11 0.666375783562126 0.666397851203266 0.66645540773791
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2030 11 0.666294675534715 0.668136930267402 0.703094572861326
+Script.Message: [LOG] 2040 10 0.666381332515355 0.669885387556783 0.703094572861326
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2050 12 0.666382464754223 0.673380957223462 0.703136583896641
+Script.Message: [LOG] 2060 12 0.666343916289141 0.67511674755426 0.703136583896641
+Script.Message: [LOG] 2070 16 0.391344888916556 0.669010850698773 0.703136583896641
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2080 20 0.666371857772272 0.69259600125607 0.703139033630012
+Script.Message: [LOG] 2090 17 0.70302634836007 0.703078405147988 0.703139033630012
+Script.Message: [LOG] 2100 17 0.703034167262802 0.703088857829342 0.703139033630012
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2110 16 0.703034405362163 0.703095473973048 0.703184332258723
+Script.Message: [LOG] 2120 17 0.703063393426754 0.703095136029927 0.703184332258723
+Script.Message: [LOG] 2130 15 0.702989453097901 0.70308988393732 0.703184332258723
+Script.Message: [LOG] 2140 16 0.226666666666667 0.680414387645909 0.703184332258723
+Script.Message: [LOG] 2150 14 0.70308367119974 0.703103945798741 0.703165306901363
+Script.Message: [LOG] 2160 14 0.703047638649878 0.703100467903347 0.703165306901363
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ehewur Hyhe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ehewur Hyhe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2170 16 0.226721955845187 0.682864360472874 0.728739243853699
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2180 15 0.703090419036356 0.707984682417832 0.728739243853699
+Script.Message: [LOG] 2190 17 0.702969211064571 0.711644046125598 0.728775746783302
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2200 18 0.703107612945833 0.72020660504253 0.728828676276892
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2210 17 0.728685904190035 0.728767148831839 0.72891278770253
+Script.Message: [LOG] 2220 17 0.728735151366853 0.728781773133166 0.72891278770253
+Script.Message: [LOG] 2230 16 0.728750483361774 0.728800279622862 0.72891278770253
+Script.Message: [LOG] 2240 16 0.728699804549538 0.728793877580458 0.72891278770253
+Script.Message: [LOG] 2250 15 0.226667167489262 0.704894333770424 0.72891278770253
+Script.Message: [LOG] 2260 13 0.728735038413659 0.728804571556623 0.72891278770253
+Script.Message: [LOG] 2270 14 0.728727166322996 0.728807072284246 0.72891278770253
+Script.Message: [LOG] 2280 14 -0.0160324717945859 0.6933546151972 0.72891278770253
+Script.Message: [LOG] 2290 14 0.728738970604221 0.728821257892797 0.72891278770253
+Script.Message: [LOG] 2300 13 0.728743185637003 0.728811636098271 0.728909162828461
+Script.Message: [LOG] 2310 13 0.72878737530626 0.728816145002577 0.728909162828461
+Script.Message: [LOG] 2320 16 0.728735334664721 0.728815134999522 0.728909162828461
+Script.Message: [LOG] 2330 16 0.728751926018178 0.728818049741357 0.728909162828461
+Script.Message: [LOG] 2340 15 0.728757658399773 0.728813328564634 0.728863581985661
+Script.Message: [LOG] 2350 14 0.728782090511937 0.728813822158812 0.728863581985661
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2360 13 0.728754898109087 0.728812985855206 0.72891490512189
+Script.Message: [LOG] 2370 14 0.728719398190545 0.728813206325681 0.72891490512189
+Script.Message: [LOG] 2380 13 0.728778254222453 0.728814399374411 0.72891490512189
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Amyrad Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Amyrad Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2390 13 0.305118720205112 0.708637996380962 0.72891490512189
+Script.Message: [LOG] 2400 15 0.728705083104882 0.728810645582138 0.72891490512189
+Script.Message: [LOG] 2410 15 0.728756801863045 0.728813488002882 0.72891490512189
+Script.Message: [LOG] 2420 12 0.728775788912454 0.728813118022634 0.72891490512189
+Script.Message: [LOG] 2430 13 0.72873971997105 0.728810361282169 0.728836788340907
+Script.Message: [LOG] 2440 12 0.728689632977275 0.728803934145374 0.72883214441653
+Script.Message: [LOG] 2450 13 0.304936153839731 0.708623446227393 0.72883101586712
+Script.Message: [LOG] 2460 14 0.728782191238202 0.728814788908716 0.72890386075709
+Script.Message: [LOG] 2470 11 0.728705596846566 0.72880477558828 0.72890386075709
+Script.Message: [LOG] 2480 14 0.728724562846162 0.728811944722354 0.72890386075709
+Script.Message: [LOG] 2490 13 0.728768827098003 0.728808137933685 0.72890386075709
+Script.Message: [LOG] 2500 13 0.728779083639792 0.728802286653967 0.72890386075709
+Script.Message: [LOG] 2510 11 -0.0160398919589296 0.69332834970031 0.728848502785199
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2520 15 0.15 0.703801435302232 0.746803255289185
+Script.Message: [LOG] 2530 14 0.728666716903785 0.732208233150747 0.746803255289185
+Script.Message: [LOG] 2540 16 -0.015978774698114 0.700167061462523 0.746803255289185
+Script.Message: [LOG] 2550 16 0.406763396553113 0.723723047155663 0.746803255289185
+Script.Message: [LOG] 2560 16 0.746643104858331 0.746741971484227 0.746801292331245
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2570 14 0.74670946172774 0.746755120338913 0.746801292331245
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Ogynim Ytehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Ogynim Ytehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2580 15 0.746664265290258 0.74676191389929 0.746801292331245
+Script.Message: [LOG] 2590 13 0.746741070830118 0.746763589157144 0.746784891981998
+Script.Message: [LOG] 2600 13 0.746723646281823 0.74676717130562 0.746784891981998
+Script.Message: [LOG] 2610 10 0.746762431094194 0.746774068667612 0.746784891981998
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2620 12 0.746625616867298 0.74677493974667 0.746889062205728
+Script.Message: [LOG] 2630 12 0.209155676155103 0.721181822173949 0.746889062205728
+Script.Message: [LOG] 2640 12 0.746728747694738 0.746781314759152 0.746889062205728
+Script.Message: [LOG] 2650 11 0.74676728969905 0.746783496920002 0.746889062205728
+Script.Message: [LOG] 2660 14 0.304943638159709 0.725749951424212 0.746889062205728
+Script.Message: [LOG] 2670 15 0.226524581923218 0.722013368229288 0.746889062205728
+Script.Message: [LOG] 2680 16 0.746752798805634 0.746789250329731 0.746889062205728
+Script.Message: [LOG] 2690 16 0.746717048817159 0.746788847976003 0.746869561274122
+Script.Message: [LOG] 2700 16 0.746716869627709 0.746787974289821 0.746869561274122
+Script.Message: [LOG] 2710 15 0.195170589074522 0.72052455432464 0.746869561274122
+Script.Message: [LOG] 2720 16 -0.0160011051033985 0.710468858745691 0.746869561274122
+Script.Message: [LOG] 2730 16 0.746693705327157 0.746782070191429 0.746869561274122
+Script.Message: [LOG] 2740 16 -0.0158826388258167 0.710470399200564 0.746869561274122
+Script.Message: [LOG] 2750 18 0.746747901552043 0.746789838218076 0.746869561274122
+Script.Message: [LOG] 2760 17 0.74677677942347 0.74679222619964 0.746869561274122
+Script.Message: [LOG] 2770 17 0.746749392288819 0.746794892667488 0.746869561274122
+Script.Message: [LOG] 2780 18 0.304947806410087 0.72576076746787 0.74684634595111
+Script.Message: [LOG] 2790 18 -0.0159768793019704 0.710479713018595 0.74684634595111
+Script.Message: [LOG] 2800 18 0.746734323123271 0.74679906891175 0.74684634595111
+Script.Message: [LOG] 2810 17 0.746784087116593 0.746799330894674 0.746830277766429
+Script.Message: [LOG] 2820 17 0.746786504621176 0.746799555145138 0.746830277766429
+Script.Message: [LOG] 2830 16 0.746745733131053 0.746792143644729 0.746830277766429
+Script.Message: [LOG] 2840 16 -0.0166673944291913 0.710440137724046 0.746830277766429
+Script.Message: [LOG] 2850 16 0.746762349889699 0.746794334851658 0.746830277766429
+Script.Message: [LOG] 2860 16 0.72870325578781 0.745934608945318 0.746830277766429
+Script.Message: [LOG] 2870 14 0.746780789194435 0.746797707617138 0.746830277766429
+Script.Message: [LOG] 2880 15 0.746787146106924 0.746803129916672 0.746830277766429
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2890 15 0.746758843179717 0.747997980280468 0.759368648531258
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Igydic Hehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Igydic Hehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2900 15 0.746775681929026 0.747999036507484 0.759368648531258
+Script.Message: [LOG] 2910 16 0.746672501961235 0.747995344974318 0.759368648531258
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2920 16 0.746801809719407 0.7509952164128 0.759440575774197
+Script.Message: [LOG] 2930 18 0.746789638064122 0.752789892575839 0.759440575774197
+FileObject.write: Writing to file 'scripts_output\22572001.gen' (Improvement snapshot)
+Script.Message: [LOG] 2940 17 0.746819759233956 0.758172880990969 0.759482696465637
+Script.Message: [LOG] 2950 14 0.759337240245356 0.759386671220062 0.759440575774197
+Script.Message: [LOG] 2960 12 0.759343139586838 0.75938977048715 0.759440575774197
+Script.Message: [LOG] 2970 14 0.451797797419607 0.744762456289718 0.759460804593747
+[WARN] LiveLibrary.create: 1 warning(s) while creating 'Epotuz Ehehe' in 'Creatures'
+[WARN] LiveLibrary.create: ... called from onStep()  <scripts\standard.expdef:191>
+[WARN] LiveLibrary.createFromGeno: creature not built because of warnings (Epotuz Ehehe)
+[WARN] LiveLibrary.createFromGeno: ... called from onStep()  <scripts\standard.expdef:191>
+Script.Message: [LOG] 2980 14 0.759343718589951 0.759407535793296 0.759464230293922
+Script.Message: [LOG] 2990 12 0.75939264636068 0.759414033299877 0.759464230293922
+Script.Message: [LOG] 3000 12 0.226665084715048 0.734047009040689 0.759464230293922
+> Script.Message: Experiment saved (11 genotypes)
+> Shell closed.

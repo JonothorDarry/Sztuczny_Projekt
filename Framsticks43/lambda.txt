@@ -1,0 +1,6 @@
+im Zadanie2.sim
+Math.randomize();
+Simulator.init();
+Simulator.start();
+while (ExpState.totaltestedcr<3000) Simulator.step();
+sa koniec_1.expt
